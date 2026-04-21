@@ -35,12 +35,33 @@ hr {{ border: none; border-top: 1px solid #333; margin: 2em 0; }}
 .nav {{ margin-bottom: 2em; padding: 12px 0; border-bottom: 2px solid #ff6b35; }}
 .nav a {{ color: #ff6b35; text-decoration: none; font-weight: bold; font-size: 1.1em; }}
 .subscribe {{ background: #ff6b35; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: inline-block; margin: 1em 0; font-weight: bold; }}
+.support-section {{ background: #111; border: 1px solid #333; border-radius: 8px; padding: 24px; margin: 2em 0; text-align: center; }}
+.support-section h2 {{ color: #ff6b35; border-bottom: none; margin-top: 0; font-size: 1.3em; }}
+.support-section p {{ color: #aaa; margin: 0.5em 0; }}
+.kofi-btn {{ display: inline-block; background: #00b9fe; color: #fff !important; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 0.5em 0; }}
+.kofi-btn:hover {{ opacity: 0.9; }}
+.email-form {{ margin-top: 1em; }}
+.email-form input[type="email"] {{ background: #1a1a2e; border: 1px solid #333; color: #e0e0e0; padding: 8px 12px; border-radius: 6px; width: 250px; max-width: 100%; }}
+.email-form button {{ background: #ff6b35; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-left: 4px; }}
+.email-form button:hover {{ opacity: 0.9; }}
 footer {{ margin-top: 3em; padding-top: 1em; border-top: 1px solid #333; color: #888; font-size: 0.85em; }}
 </style>
 </head>
 <body>
 <div class="nav"><a href="index.html">🏟️ Stadium Meta Report</a></div>
 {body}
+<div class="support-section">
+<h2>☕ Support This Newsletter</h2>
+<p>If you enjoy Stadium Meta Report, consider buying me a coffee!</p>
+<a href="https://ko-fi.com/stadiummeta" class="kofi-btn" target="_blank" rel="noopener">Support on Ko-fi</a>
+<div class="email-form">
+<p>Get it in your inbox every Tuesday:</p>
+<form action="https://buttondown.com/api/emails/embed/stadiummeta" method="post">
+<input type="email" name="email" placeholder="your@email.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div>
+</div>
 <footer>
 <p>Data sourced from <a href="https://stadiumbuilds.io">stadiumbuilds.io</a>. Generated {date}.</p>
 </footer>
@@ -64,6 +85,15 @@ a:hover {{ text-decoration: underline; }}
 .issue .date {{ color: #888; font-size: 0.9em; }}
 .issue .preview {{ color: #aaa; margin-top: 8px; font-size: 0.95em; }}
 .subscribe {{ background: #ff6b35; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: inline-block; margin: 1em 0; font-weight: bold; }}
+.support-section {{ background: #111; border: 1px solid #333; border-radius: 8px; padding: 24px; margin: 2em 0; text-align: center; }}
+.support-section h2 {{ color: #ff6b35; border-bottom: none; margin-top: 0; font-size: 1.3em; }}
+.support-section p {{ color: #aaa; margin: 0.5em 0; }}
+.kofi-btn {{ display: inline-block; background: #00b9fe; color: #fff !important; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 0.5em 0; }}
+.kofi-btn:hover {{ opacity: 0.9; }}
+.email-form {{ margin-top: 1em; }}
+.email-form input[type="email"] {{ background: #1a1a2e; border: 1px solid #333; color: #e0e0e0; padding: 8px 12px; border-radius: 6px; width: 250px; max-width: 100%; }}
+.email-form button {{ background: #ff6b35; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-left: 4px; }}
+.email-form button:hover {{ opacity: 0.9; }}
 footer {{ margin-top: 3em; padding-top: 1em; border-top: 1px solid #333; color: #888; font-size: 0.85em; }}
 </style>
 </head>
@@ -73,6 +103,18 @@ footer {{ margin-top: 3em; padding-top: 1em; border-top: 1px solid #333; color: 
 <p class="subscribe" style="cursor:default;">Updated every Tuesday</p>
 <h2>Archive</h2>
 {issues}
+<div class="support-section">
+<h2>☕ Support This Newsletter</h2>
+<p>If you enjoy Stadium Meta Report, consider buying me a coffee!</p>
+<a href="https://ko-fi.com/stadiummeta" class="kofi-btn" target="_blank" rel="noopener">Support on Ko-fi</a>
+<div class="email-form">
+<p>Get it in your inbox every Tuesday:</p>
+<form action="https://buttondown.com/api/emails/embed/stadiummeta" method="post">
+<input type="email" name="email" placeholder="your@email.com" required>
+<button type="submit">Subscribe</button>
+</form>
+</div>
+</div>
 <footer>
 <p>Powered by <a href="https://stadiumbuilds.io">stadiumbuilds.io</a> data. Generated {date}.</p>
 </footer>
